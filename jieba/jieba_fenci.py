@@ -51,20 +51,9 @@ def jieba_pseg(fname,fenci_fname, pos_fname, tag_fname):
 if __name__ == '__main__':
     start = datetime.now()
 
-    input_dir = u'D:\\情感信息分类\\Machine-learning based Sentiment Classification Method\\coae2014'
-    raw_fname = input_dir+os.sep+'neg'
-    fenci_fname = input_dir+os.sep+'neg_fenci'
-    jieba_cut(raw_fname,fenci_fname)
-
-
-    input_dir = 'train'
-    raw_fname = input_dir+os.sep+'pos_filted'
-    fenci_fname = input_dir+os.sep+'pos_fenci'
-    jieba_cut(raw_fname,fenci_fname)
-
-
-    raw_fname = input_dir+os.sep+'neg_filted'
-    fenci_fname = input_dir+os.sep+'neg_fenci'
+    input_dir = ''
+    raw_fname = ''
+    fenci_fname = ''
     jieba_cut(raw_fname,fenci_fname)
 
     end = datetime.now()
